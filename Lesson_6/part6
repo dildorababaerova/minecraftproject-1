@@ -1,0 +1,14 @@
+# Replace the lines below with your code #    
+# for loop set to 23
+for index in range(23):                                            
+# if else conditional with two Agent detect commands, seperated by an and not operator
+    if agent.detect(AgentDetection.BLOCK, FORWARD) and not agent.detect(AgentDetection.BLOCK, LEFT):
+        agent.move(LEFT, 1)
+    
+# elif conditional with two Agent detect commands, seperated by an and operator
+    elif agent.detect(AgentDetection.BLOCK, FORWARD) and agent.detect(AgentDetection.BLOCK, LEFT):
+        agent.move(RIGHT, 2)
+# else part of the else if conditional             
+    else:
+        agent.move(FORWARD, 1)
+# End of loop                                       

@@ -1,0 +1,12 @@
+# Replace the lines below with your code #    
+# for loop set to 7 
+for index in range(7):                           
+# Add the operator NOT to the condition below          |Part 2 
+# if conditional with an Agent detect condition|Part 1
+    if not agent.detect(AgentDetection.BLOCK, LEFT):
+# Make the Agent move forward
+        agent.move(FORWARD, 1)
+# if conditional with an Agent detect condition                |Part 3
+#loops.pause(2000)
+# Make the Agent move forward                                  |Part 3
+# End of loop

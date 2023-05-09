@@ -1,0 +1,19 @@
+left = BLUE_GLAZED_TERRACOTTA
+right = PINK_GLAZED_TERRACOTTA
+# Replace the lines below with your code #
+# Change value of loop below from 9 to 21                     |Part 2
+# for loop set to 9                                   |Part 1
+for index in range(21):
+# if else conditional with an Agent inspect condition |Part 1
+    if agent.inspect(AgentInspection.BLOCK, FORWARD) == left:
+# elif conditional with an Agent inspect condition            |Part 2
+        agent.turn(LEFT_TURN)
+
+    elif agent.inspect(AgentInspection.BLOCK, FORWARD) == right:
+# Make the agent turn right                                   |Part 2
+        agent.turn(RIGHT_TURN)
+# else part of the if else conditional                |Part 1
+    else:
+# Make the agent move forward                         |Part 1
+        agent.move(FORWARD, 1)
+# End of loop                                         |Part 1
